@@ -44,7 +44,7 @@ do {
             System.out.println("Opção inválida");
             break;
     }
-//    contaBancaria.valorInvestido = contaBancaria.valorInvestido * 1.05;
+    double total = contaBancaria.valorInvestido * 1.05;
 }while (x != 4 );
 
 
