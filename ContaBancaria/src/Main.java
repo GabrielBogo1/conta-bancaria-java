@@ -8,7 +8,7 @@ public class Main {
 
     System.out.println("=========================");
     System.out.println("Olá, seja bem-vindo(a)!");
-    System.out.println("Sou Charles do banco Falido's, vou te ajudar em suas transações");
+    System.out.println("Sou Charles do banco Falido's & Quebrados, vou te ajudar em suas transações");
     System.out.println("=========================");
 
     System.out.println("\n Qual é o seu nome?");
@@ -18,10 +18,11 @@ public class Main {
     int opcao;
     int x = 0;
 do {
-    System.out.println("\nSelecione uma das opções");
+    System.out.println("\nSelecione uma das opções: ");
     System.out.println("1 -Resgate");
     System.out.println("2 - Depósito");
     System.out.println("3 - Visualização dos dados da conta e saldo");
+    System.out.println("4 - Investir dinheiro");
     opcao = scanner.nextInt();
 
     switch (opcao) {
@@ -39,13 +40,15 @@ do {
         }
         case 4: {
             contaBancaria.investimentoBancario();
+            break;
         }
         default:
-            System.out.println("Opção inválida");
+            System.out.println("Opção inválida, digite um valor de 1 a 4");
             break;
     }
-    double total = contaBancaria.valorInvestido * 1.05;
+    double total = contaBancaria.getValorInvestido() * 1.05;
 }while (x != 4 );
+
 
 
 
